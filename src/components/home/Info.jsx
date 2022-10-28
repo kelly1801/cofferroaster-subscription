@@ -1,5 +1,5 @@
-import Button from "./Button";
-import { H3 } from "../global-styles/fontStyles";
+import Button from "../shared/Button";
+import { H3 } from "../../global-styles/fontStyles";
 import InfoItem from "./InfoItem";
 import styled from "styled-components";
 
@@ -25,8 +25,7 @@ const infoData = [
 ];
 const Info = () => {
   return (
-
-<InfoContainer>
+    <InfoContainer>
       <H3>How it works</H3>
       <ItemsContainer>
         {infoData.map(({ number, title, description }) => (
@@ -36,35 +35,26 @@ const Info = () => {
 
       <Button>Create your plan</Button>
     </InfoContainer>
-   
-
-    
-
   );
 };
 
 export default Info;
 
 const InfoContainer = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-padding: 4rem 0;
-position: relative;
-margin: 10rem 2rem;
+  padding: 4rem 0;
+  position: relative;
+  margin: 10rem 2rem;
 
-button {
+  button {
     align-self: flex-start;
-  
-}
-
-`
+  }
+`;
 const ItemsContainer = styled.div`
-display: flex;
-text-align: left;
+  display: flex;
+  text-align: left;
 
-justify-content: space-between;
-
-
-`
-
+  justify-content: space-between;
+`;

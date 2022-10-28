@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { H2, BodyFont } from "../global-styles/fontStyles";
+import { H2, BodyFont } from "../../global-styles/fontStyles";
 import Button from "./Button";
 const Header = ({
   desktopImg,
@@ -14,12 +14,12 @@ const Header = ({
       <TextContainer>
         <H2>{title}</H2>
         <BodyFont>{description}</BodyFont>
-        <Button>{btnText}</Button>
+        {btnText && <Button>{btnText}</Button>}
       </TextContainer>
 
       <HeaderBg>
-        <source media="(min-width:768px)" srcset={tabletImg} />
-        <source media="(min-width:480px)" srcset={mobileImg} />
+        <source media="(min-width:768px)" srcSet={tabletImg} />
+        <source media="(min-width:480px)" srcSet={mobileImg} />
 
         <img src={desktopImg} alt="" />
       </HeaderBg>

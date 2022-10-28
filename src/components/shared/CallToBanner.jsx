@@ -1,4 +1,4 @@
-import { H2, BodyFont } from "../global-styles/fontStyles";
+import { H2, BodyFont } from "../../global-styles/fontStyles";
 import styled from "styled-components";
 import BannerItem from "./BannerItem";
 

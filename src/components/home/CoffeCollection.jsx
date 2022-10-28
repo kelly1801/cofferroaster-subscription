@@ -1,4 +1,4 @@
-import { BigTitle } from "../global-styles/fontStyles";
+import { BigTitle } from "../../global-styles/fontStyles";
 import CoffeItem from "./CoffeItem";
 import styled from "styled-components";
 const coffeData = [
@@ -31,22 +31,20 @@ const CoffeCollection = () => {
   return (
     <div>
       <BigTitle>our collection</BigTitle>
-<CollectionContainer>
-      {coffeData.map(({ title, description, img }) => (
-        <CoffeItem
-          coffeImg={img}
-          coffeTitle={title}
-          coffeDescription={description}
-        />
-      ))}
-
-</CollectionContainer>
+      <CollectionContainer>
+        {coffeData.map(({ title, description, img }) => (
+          <CoffeItem
+            coffeImg={img}
+            coffeTitle={title}
+            coffeDescription={description}
+          />
+        ))}
+      </CollectionContainer>
     </div>
   );
 };
 
 export default CoffeCollection;
 const CollectionContainer = styled.div`
-display:flex;
-
-`
+  display: flex;
+`;

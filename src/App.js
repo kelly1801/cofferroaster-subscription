@@ -1,20 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/shared/NavBar";
+import Footer from "./components/shared/Footer";
 import HomePage from "./pages/HomePage";
-import { BrowserRouter,Routes, Route} from "react-router-dom";
-import NavBar from "./components/NavBar";
-import footer from "./components/Footer";
-import Footer from "./components/Footer";
+import AboutPage from "./pages/AboutPage";
 function App() {
   return (
     <div>
-        <NavBar/>
-        <BrowserRouter>
-            <Routes>
-                <Route path='/MIMI' element={<HomePage/>}/>
-            </Routes>
+      <NavBar />
 
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+      </Routes>
 
-        </BrowserRouter>
-<Footer/>
+      <Footer />
     </div>
   );
 }

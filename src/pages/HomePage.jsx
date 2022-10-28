@@ -1,17 +1,15 @@
-import NavBar from "../components/NavBar";
-import Header from "../components/Header";
+import Header from "../components/shared/Header";
 import styled from "styled-components";
 import headerImg from "../assets/home/desktop/hero.jpg";
 import mobileHeroImg from "../assets/home/mobile/hero.jpg";
 import tabletHeroImg from "../assets/home/tablet/hero.jpg";
-import CoffeCollection from "../components/CoffeCollection";
-import CallToBanner from "../components/CallToBanner";
-import Footer from "../components/Footer";
-import Info from "../components/Info";
+import CoffeCollection from "../components/home/CoffeCollection";
+import CallToBanner from "../components/shared/CallToBanner";
+
+import Info from "../components/home/Info";
 const HomePage = () => {
   return (
     <HomePageContainer>
-
       <Header
         tabletImg={tabletHeroImg}
         mobileImg={mobileHeroImg}
@@ -21,10 +19,9 @@ const HomePage = () => {
         btnText="Create your plan."
       />
 
-      <CoffeCollection/>
-      <CallToBanner/>
-      <Info/>
-
+      <CoffeCollection />
+      <CallToBanner />
+      <Info />
     </HomePageContainer>
   );
 };
@@ -32,5 +29,5 @@ const HomePage = () => {
 export default HomePage;
 
 const HomePageContainer = styled.main`
-  padding: 2rem;
+  padding: 4rem;
 `;

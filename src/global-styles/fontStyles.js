@@ -27,7 +27,7 @@ line-height: 2.25rem;
 font-family: 'Fraunces', serif;
 `
 export const H4 = styled.h4`
-font-size: 1.25rem;
+font-size: 1.5rem;
 line-height: 2rem;
 font-family: 'Fraunces', serif;
 `

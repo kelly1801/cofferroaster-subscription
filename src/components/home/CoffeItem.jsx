@@ -1,4 +1,4 @@
-import { H3, BodyFont } from "../global-styles/fontStyles";
+import { H3, BodyFont } from "../../global-styles/fontStyles";
 import styled from "styled-components";
 const CoffeItem = ({ coffeImg, coffeTitle, coffeDescription }) => {
   return (
@@ -15,19 +15,19 @@ const CoffeItem = ({ coffeImg, coffeTitle, coffeDescription }) => {
 export default CoffeItem;
 
 const ImageContainer = styled.figure`
-width: calc(100% / 4);
-margin-top: -6rem;
+  width: calc(100% / 4);
+  margin-top: -6rem;
 
-padding: 2rem;
-z-index: 1;
-img {
+  padding: 2rem;
+  z-index: 1;
+  img {
     width: 100%;
     margin: 1rem;
-}
-`
+  }
+`;
 const TextContainer = styled.figcaption`
-text-align: center;
-${H3} {
+  text-align: center;
+  ${H3} {
     margin: 1rem 0;
-}
-`
+  }
+`;
