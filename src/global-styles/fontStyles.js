@@ -2,9 +2,13 @@ import styled from 'styled-components'
 
 export const BigTitle = styled.h1`
 font-size: 9.3rem;
-line-height: 4.5rem;
-font-family: 'Fraunces', serif;
+  font-family: 'Fraunces', serif;
 text-transform: lowercase;
+background: -webkit-linear-gradient(-90deg, var(--lightGray), #FEFCF7 100%);
+text-align: center;
+opacity: 0.5;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 `
 export const H1 = styled.h1`
 font-size: 4.5rem;
@@ -15,6 +19,7 @@ export const H2 = styled.h2`
 font-size: 2.5rem;
 line-height: 3rem;
 font-family: 'Fraunces', serif;
+
 `
 export const H3 = styled.h3`
 font-size: 2rem;
@@ -37,4 +42,5 @@ line-height: 0.9rem;
 font-family: 'Barlow', serif;
 text-transform: uppercase;
 letter-spacing: 0.92px;
+  cursor: pointer;
 `

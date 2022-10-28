@@ -24,16 +24,17 @@ const NavBarContainer = styled.nav`
 display: flex;
 justify-content: space-between;
 align-items: center;
+  padding: 2rem 2rem 0;
 
 
 `
-const LogoContainer = styled.figure`
+export const LogoContainer = styled.figure`
 
 `
-const MenuContainer = styled.ul`
+export const MenuContainer = styled.ul`
 display: flex;
 align-items: center;
 
 `
-const NavLink = styled(NavFont)`
+export const NavLink = styled(NavFont)`
 margin-left: 1rem;`
